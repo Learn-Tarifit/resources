@@ -14,18 +14,21 @@
 
     <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Idlisen n rmed Tarifit</button>
+            <button class="nav-link active" id="rmed-tarifit-tab" data-bs-toggle="tab" data-bs-target="#rmed" type="button" role="tab" aria-controls="rmed" aria-selected="true">Idlisen n rmed Tarifit</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Idlisen s Tarifit</button>
+            <button class="nav-link" id="idlisen-s-tarifit-tab" data-bs-toggle="tab" data-bs-target="#s-tarifit" type="button" role="tab" aria-controls="s-tarifit" aria-selected="false">Idlisen s Tarifit</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Idlisen n amezruy</button>
+            <button class="nav-link" id="idlisen-n-amezruy-tab" data-bs-toggle="tab" data-bs-target="#amezruy" type="button" role="tab" aria-controls="amezruy" aria-selected="false">Idlisen n amezruy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="idlisen-studies-tab" data-bs-toggle="tab" data-bs-target="#studies" type="button" role="tab" aria-controls="studies" aria-selected="false">Idlisen n studies</button>
         </li>
     </ul>
 
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="tab-pane fade show active" id="rmed" role="tabpanel" aria-labelledby="rmed-tarifit-tab">
             
             <div style="margin: 50px;" class="text-center">
                 <div class="containter">
@@ -42,7 +45,7 @@
             </div>
             
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="tab-pane fade" id="s-tarifit" role="tabpanel" aria-labelledby="idlisen-s-tarifit-tab">
 
             <div style="margin: 50px;" class="text-center">
                 <div class="containter">
@@ -52,11 +55,22 @@
             </div>
 
         </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <div class="tab-pane fade" id="amezruy" role="tabpanel" aria-labelledby="idlisen-n-amezruy-tab">
 
             <div style="margin: 50px;" class="text-center">
                 <div class="containter">
                     <div class="row d-flex justify-content-center" id="idlisen_amezruy">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="studies" role="tabpanel" aria-labelledby="studies-tab">
+
+            <div style="margin: 50px;" class="text-center">
+                <div class="containter">
+                    <div class="row d-flex justify-content-center" id="idlisen_studies">
                     </div>
                 </div>
             </div>
@@ -71,8 +85,12 @@
     add_elements("rmed_tarifit", "js/resources.json");
     add_elements("idlisen_tarifit", "js/resources.json");
     add_elements("idlisen_amezruy", "js/resources.json");
+    add_elements("idlisen_studies", "js/resources.json");
     includeHTML();
 </script>
 
 
 </html>
+
+
+
